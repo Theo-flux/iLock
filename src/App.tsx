@@ -1,10 +1,16 @@
-import {Container } from '@mantine/core';
+import { Route, Routes } from 'react-router-dom';
+import { Register, Login, Home } from './components';
+import { Section } from './shared';
 
 function App() {
   return (
-    <Container size="xxs">
-      iLock App
-    </Container>
+    <Section>
+      <Routes>
+        <Route path="/"  element={<Home/>}/>
+        <Route path="/login"  element={<Login/>}/>
+        <Route path="/register"  element={<Register/>}/>
+      </Routes>
+    </Section>
   )
 }
 

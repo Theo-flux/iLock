@@ -1,10 +1,10 @@
-import { useState } from 'react'
+import {Container } from '@mantine/core';
 
 function App() {
   return (
-    <div >
-      App
-    </div>
+    <Container size="xxs">
+      iLock App
+    </Container>
   )
 }
 

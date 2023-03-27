@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { radius } from "../../utils";
 
@@ -21,3 +22,7 @@ export const DoorCard = styled.div`
 `
 
 export const Status = styled.div``
+
+export const StyledLink = styled(Link)`
+    text-decoration: none;
+`

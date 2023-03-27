@@ -1,2 +1,5 @@
 export * from './forms'
 export {default as Home } from './home/Home'
+export { default as Notification} from './notifications/Notification'
+export { default as Seetings} from './settings/Settings'
+export { default as Door} from './door/Door'

@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
-import { Register, Login, Home } from './components';
+import { Register, Login, Home, Notification, Door } from './components';
+import Settings from './components/settings/Settings';
 import { Section } from './shared';
 
 function App() {
@@ -9,6 +10,9 @@ function App() {
         <Route path="/"  element={<Home/>}/>
         <Route path="/login"  element={<Login/>}/>
         <Route path="/register"  element={<Register/>}/>
+        <Route path="/notification"  element={<Notification/>}/>
+        <Route path="/settings"  element={<Settings/>}/>
+        <Route path="/door"  element={<Door/>}/>
       </Routes>
     </Section>
   )

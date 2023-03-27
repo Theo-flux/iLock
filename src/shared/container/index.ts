@@ -27,3 +27,7 @@ export const RowContainer = styled.div`
   }
 `;
 
+export const Wrapper = styled.div`
+  width: 90%;
+  margin: 0 auto;
+`

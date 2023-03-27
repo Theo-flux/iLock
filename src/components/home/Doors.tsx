@@ -8,7 +8,7 @@ function Doors() {
         <StyledH5>Doors</StyledH5>
 
         <DoorInnerContainer>
-            <StyledLink to={'/door'}>
+            <StyledLink to={`/door/main-door`}>
                 <DoorCard>
                     <StyledText>Main Door</StyledText>
                     <Status>
@@ -18,7 +18,7 @@ function Doors() {
                 </DoorCard>
             </StyledLink>
 
-            <StyledLink to={'/door'}>
+            <StyledLink to={`/door/office-door`}>
                 <DoorCard>
                     <StyledText>Office Door</StyledText>
                     <Status>

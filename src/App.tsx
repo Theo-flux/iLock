@@ -12,7 +12,7 @@ function App() {
         <Route path="/register"  element={<Register/>}/>
         <Route path="/notification"  element={<Notification/>}/>
         <Route path="/settings"  element={<Settings/>}/>
-        <Route path="/door"  element={<Door/>}/>
+        <Route path="/door/:door"  element={<Door/>}/>
       </Routes>
     </Section>
   )

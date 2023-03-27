@@ -11,7 +11,8 @@ export const DoorInnerContainer = styled.div`
 
 export const DoorCard = styled.div`
     border-radius: ${radius.md};
-    padding: 0.5rem 1rem;
+    height: 53px;
+    padding: 0rem 1rem;
     background-color: var(--gallery);
     display: flex;
     justify-content: space-between;

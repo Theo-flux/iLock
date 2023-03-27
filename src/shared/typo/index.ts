@@ -41,7 +41,7 @@ export const StyledH6 = styled.h6``;
 
 export const StyledText = styled.p`
   font-weight: 500;
-  color: ${(props) => (props.color ? `${props.color}` : `var(--gray)`)};
+  color: ${(props) => (props.color ? `${props.color}` : `var(--primary)`)};
 `;
 
 export const StyledSmallText = styled.small`
@@ -58,7 +58,7 @@ export const StyledSmallText = styled.small`
 `;
 
 export const StyledTinyText = styled.p`
-  font-size: 0.875rem;
+  font-size: 0.675rem;
   font-weight: 400;
   color: var(--gray);
   /* border: 1px solid magenta; */

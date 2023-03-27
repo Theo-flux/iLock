@@ -21,7 +21,7 @@ export default createGlobalStyle`
         --silver: #ADADAD;
         --gallery: #EFEFEF;
         --danger_stroke: #D30000;
-        --active: #004804;
+        --active: #8000FF;
         --inactive: #2D2D2D;
         --deactivated: #FF0000;
         --active-bg: #8BF290;

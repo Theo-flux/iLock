@@ -1,15 +1,23 @@
 import { useParams } from "react-router-dom"
-import { Wrapper } from "../../shared"
+import { Button, StyledText, Wrapper } from "../../shared"
 import NavCommon from "../common/NavCommon"
+import { DoorContainer, Circle, StyledLockClose, StyledLockOpen } from "./door.css";
 
 function Door() {
   const params = useParams();
 
-  console.log(params)
-
   return (
     <Wrapper>
         <NavCommon text={`${params?.door}`}/>
+
+        <DoorContainer>
+          <Circle>
+            <StyledLockOpen/>
+            <StyledText>Locked</StyledText>
+          </Circle>
+
+          <Button width="fit-content">Unlock {params?.door}</Button>
+        </DoorContainer>
     </Wrapper>
   )
 }

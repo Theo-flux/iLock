@@ -2,13 +2,14 @@ import styled from 'styled-components'
 import { radius, transition } from '../../utils';
 
 type ButtonProps = {
-  disabled?: boolean
+  disabled?: boolean,
+  width?: string
 }
 
 // Button styling
 export const Button = styled.button<ButtonProps>`
   cursor: pointer;
-  width: 100%;
+  width: ${props => props.width ? `${props.width}`: '100%'};
   font-weight: 500;
   border-radius: ${radius.sm};
   background-color: var(--primary);

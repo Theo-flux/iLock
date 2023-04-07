@@ -59,7 +59,7 @@ function Login() {
   return (
     <AppContainer>
       <TopContainer>
-       <StyledSmallText><StyledLink to="/register">Register</StyledLink></StyledSmallText>
+       {/* <StyledSmallText><StyledLink to="/register">Register</StyledLink></StyledSmallText> */}
       </TopContainer>
 
       <FormContainer>

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { device } from '../../utils';
+import { Link } from 'react-router-dom';
 
 export const StyledH1 = styled.h1`
   color: var(--black);
@@ -56,6 +57,11 @@ export const StyledSmallText = styled.small`
     font-size: 0.933rem;
   }
 `;
+
+export const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: var(--primary)
+`
 
 export const StyledTinyText = styled.p`
   font-size: 0.675rem;

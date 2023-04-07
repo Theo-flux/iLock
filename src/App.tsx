@@ -4,7 +4,6 @@ import Settings from './components/settings/Settings';
 import { Section } from './shared';
 
 
-
 function App() {
   return (
     <Section>

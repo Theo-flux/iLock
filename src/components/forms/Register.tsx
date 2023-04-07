@@ -1,12 +1,12 @@
 import Logo from '../../assets/images/iLock.svg'
-import { AppContainer, Button, InputPasssword, InputText, StyledSmallText } from '../../shared'
+import { AppContainer, Button, InputPasssword, InputText, StyledSmallText, StyledLink } from '../../shared'
 import {TopContainer, FormContainer, MidContainer, LogoImage} from './index.css'
 
 function Register() {
   return (
     <AppContainer>
       <TopContainer>
-       <StyledSmallText>Sign in</StyledSmallText>
+       <StyledSmallText><StyledLink to="/login">Sign in</StyledLink></StyledSmallText>
       </TopContainer>
       
       <FormContainer>

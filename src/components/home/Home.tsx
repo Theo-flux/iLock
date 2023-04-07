@@ -20,7 +20,6 @@ function Home() {
   const today = event.toLocaleDateString(undefined, optionsDate);
   const time = event.toLocaleTimeString('en-GB', optionsTime);
 
-  console.log(time)
   return (
     <HomeContainer>
       <Nav/>

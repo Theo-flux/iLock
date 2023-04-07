@@ -119,8 +119,16 @@ export const StyledInput = styled.input`
     left: 0px;
   }
 
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   border-radius: ${radius.sm};
 `;
 
 // End  Custom Styling for input
+
+export const ErrorText = styled.small`
+  margin-bottom: 0.5rem;
+  color: red;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+`

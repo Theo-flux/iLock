@@ -1,6 +1,5 @@
 type ValidatorProps = {
-    firstName: string,
-    lastName: string,
+    email: string,
     password: string,
 }
 
@@ -10,17 +9,16 @@ type OldUserProps = {
 
 export function validator(newUserData: ValidatorProps){
     const errorMsg: ValidatorProps = {
-        firstName: "",
-        lastName: "",
+        email: "",
         password: "",
     }
     
-    if(!newUserData.firstName){
-        errorMsg.firstName = "First Name field cannot be empty"
+    if(!newUserData.email){
+        errorMsg.email = "Empty field"
     }
 
-    if(!newUserData.lastName){
-        errorMsg.lastName = "Last Name field cannot be empty"
+    if(!newUserData.password){
+        errorMsg.password = "Last Name field cannot be empty"
     }
 
     if(!newUserData.password){

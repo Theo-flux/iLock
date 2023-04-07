@@ -20,4 +20,5 @@ export const LogoImage = styled.img`
 `
 
 export const FormContainer = styled.div`
+    width: 100%;
 `

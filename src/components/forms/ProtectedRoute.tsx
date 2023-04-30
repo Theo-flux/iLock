@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Outlet, Navigate, Route } from "react-router-dom"
 
 type Props = {
@@ -6,7 +6,7 @@ type Props = {
 }
 
 function ProtectedRoute({children}: Props) {
-    const login = false
+    let login = sessionStorage.getItem('firebase:authUser:AIzaSyAS2wQHL8XjxB2irMVjm07uSh77Cqrcv6M:[DEFAULT]') ? true : false;
 
     if (login) {
         return <React.Fragment>{children}</React.Fragment>

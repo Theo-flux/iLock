@@ -1,10 +1,10 @@
 import { useState, useEffect, useCallback } from 'react';
 
-function usePersistState(key: string, defaultKey: string) {
+function usePersistState(key: string, defaultKey: boolean) {
   const [value, setValue] = useState(defaultKey);
 
   const updateValue = useCallback(
-    (val: string) => {
+    (val: boolean) => {
       setValue(val);
       window?.sessionStorage.setItem(key, JSON.stringify(val));
     },
@@ -16,7 +16,7 @@ function usePersistState(key: string, defaultKey: string) {
     if (data !== null) updateValue(JSON.parse(data));
   }, [key, updateValue]);
 
-  return [value, updateValue];
+  return [value, updateValue] as const;
 }
 
 export default usePersistState;

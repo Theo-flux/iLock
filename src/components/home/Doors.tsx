@@ -3,6 +3,9 @@ import { StyledH5, StyledSmallText, StyledText, StyledTinyText } from '../../sha
 import {DoorContainer, DoorInnerContainer, DoorCard, Status, StyledLink} from './doors.css'
 
 function Doors() {
+
+    
+
   return (
     <DoorContainer>
         <StyledH5>Doors</StyledH5>

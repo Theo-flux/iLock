@@ -31,7 +31,7 @@ function Door() {
             <StyledText>{doorStatus ? 'Locked' : 'Unlocked'}</StyledText>
           </Circle>
 
-          <Button onClick={() => setDoorStatus(!doorStatus)} width="fit-content">{doorStatus ? 'Lock' : 'Unlock'} {params?.door}</Button>
+          <Button onClick={() => setDoorStatus(!doorStatus)} width="fit-content">{doorStatus ? 'unlock' : 'Lock'} {params?.door}</Button>
         </DoorContainer>
     </Wrapper>
   )

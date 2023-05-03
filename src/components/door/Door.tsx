@@ -4,6 +4,7 @@ import { Button, StyledText, Wrapper } from "../../shared"
 import NavCommon from "../common/NavCommon"
 import { DoorContainer, Circle, StyledLockClose, StyledLockOpen } from "./door.css";
 import usePersistState from "../../helpers/usepersistState.js";
+import { serverTimestamp } from "firebase/database";
 import { set, ref } from 'firebase/database';
 import { db } from "../../services";
 
@@ -14,6 +15,7 @@ function Door() {
   function writeDoorData(doorStatus: boolean) {
     set(ref(db, `doors/${params.door}`), {
       isLocked: doorStatus,
+      created: serverTimestamp()
     });
   }
 

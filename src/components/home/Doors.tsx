@@ -29,6 +29,8 @@ function Doors() {
     let date = new Date(Number(lastUpdated))
     const time = date.toLocaleTimeString()
 
+    console.log(time)
+
   return (
     <DoorContainer>
         <StyledH5>Doors</StyledH5>

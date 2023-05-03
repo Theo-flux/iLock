@@ -24,6 +24,11 @@ function Doors() {
         readDoorsData()
     }, [])
 
+
+    let lastUpdated = doors?.['main-door']?.['created']
+    let date = new Date(Number(lastUpdated))
+    const time = date.toLocaleTimeString()
+
   return (
     <DoorContainer>
         <StyledH5>Doors</StyledH5>
@@ -31,7 +36,15 @@ function Doors() {
         <DoorInnerContainer>
             <StyledLink to={`/door/main-door`}>
                 <DoorCard>
-                    <StyledText>Main Door</StyledText>
+                    <Status>
+                        <StyledText>Main Door</StyledText>
+                        <StyledSmallText 
+                            color={`
+                                ${doors?.['main-door']?.['isLocked'] ? 'var(--active)' : 'var(--deactivated)'}
+                            `}>
+                                last updated: {time}
+                            </StyledSmallText>
+                    </Status>
                     <Status>
                         <StyledTinyText>Status</StyledTinyText>
                         <StyledSmallText 
